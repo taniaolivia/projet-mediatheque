@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Médiathèque</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li id="filter-all">All</li>
+                <li id="filter-albums">Albums</li>
+                <li id="filter-games">Games</li>
+                <li id="filter-movies">Movies</li>
+            </ul>
+            <div class="test">
+                <input type="text" id="search" placeholder="Search..">
+                <button id="btn-add" type="button" class="btn btn-primary">Add media</button>
+            </div>
+        </nav>
+
+        <div id="content"></div>
+
+        <div id="form-edit" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Edit media</h3>
+                <form>
+                    <hr class='hr1'>
+
+                    <label for="type"><b>Type</b></label>
+                    <p id="edit-type"></p>
+
+                      <h4> <hr class='half'>GENERAL <hr class='half'></h4>
+
+                      <p><label for="title"><b>Title</b></label>
+                      <input type="text" placeholder="Title" name="title" class="title" required></p>
+
+                      <p><label for="date"><b>Release date</b></label>
+                      <input type="date" placeholder="Release date" name="date" class="date" required></p>
+                      
+                      
+                        <label for="rating"><b>Rating</b></label>
+                        <input type="text" class="rating" placeholder="5" required></p>
+                  
+                        
+                      <p><label for="image"><b>Image</b></label>
+                        <input type="url" placeholder="image" name="image" class="image-url" required></p>
+                    
+                     <h4><hr class='half'>SPECIFIC<hr class='half'></h4>
+
+                     <div class="specific1">
+                        <p><label for="studio"><b>Studio</b></label>
+                            <input type="text" placeholder="Studio" name="studio" class="studio" required></p>
+
+                        <p><label for="nbPlayers"><b>Number of players</b></label>
+                            <input type="text" placeholder="100" name="nbPlayers" class="nbPlayers" required></p>    
+                            
+                        <p><label for="game-plot"><b>Plot</b></label>
+                            <input type="text" placeholder="A princess is trapped..." name="game-plot" class="game-plot" required></p>    
+                    </div>
+                     <hr class='hr1'>
+
+                     <div class="button-form">
+                      <button type="button" class="btn btn-dark btn-cancel">Cancel</button>
+                      <button type="button" class="btn btn-success btn-submit">Submit</button>
+                     </div>
+                  </form>
+                  </div>
+        </div>
+        
+        <div id="form-add" class="modal">
+              
+            <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h3>Add media</h3>
+
+                  <form>
+                    <hr class='hr1'>
+                      <label for="type"><b>Type</b></label>
+                      <select name="type" id="selected-type2">
+                          <option value="game">Game</option>
+                          <option value="album">Album</option>
+                          <option value="movie">Movie</option>
+                      </select>
+
+                     <h4> <hr class='half'>GENERAL <hr class='half'></h4>
+
+                      <p><label for="title"><b>Title</b></label>
+                      <input type="text" placeholder="Title" name="title" class="title" required></p>
+
+                      <p><label for="date"><b>Release date</b></label>
+                      <input type="date" placeholder="Release date" name="date" class="date" required></p>
+                      
+                     
+                        <p><label for="rating"><b>Rating</b></label>
+                        <input type="text" class="rating" placeholder="5" required></p>
+
+                        
+                      <p><label for="image"><b>Image</b></label>
+                        <input type="url" placeholder="https://" name="image" class="image-url" required></p>
+                    
+                     <h4><hr class='half'>SPECIFIC<hr class='half'></h4>
+
+                     <div class="specific2">
+                        <p><label for="studio"><b>Studio</b></label>
+                            <input type="text" placeholder="Studio" name="studio" class="studio" required></p>
+
+                        <p><label for="nbPlayers"><b>Number of players</b></label>
+                            <input type="text" placeholder="100" name="nbPlayers"  class="nbPlayers" required></p>    
+                            
+                        <p><label for="game-plot"><b>Plot</b></label>
+                            <input type="text" placeholder="A princess is trapped..." name="game-plot" class="game-plot" required></p>    
+                    </div>
+                     <hr class='hr1'>
+
+                     <div class="button-form">
+                      <button type="button" class="btn btn-dark btn-cancel">Cancel</button>
+                      <button type="button" class="btn btn-success btn-add">Add</button>
+                     </div>
+                  </form>
+          </div>  
+      </div>
+
+        <!-- include src files here... -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script type="module" src="src/main.js"></script>
+    </body>
+</html>

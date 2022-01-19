@@ -1,0 +1,329 @@
+html
+{
+  font-family: calibri;
+}
+
+
+h1{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.modal 
+{
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+   
+}
+  
+.modal-content 
+{
+  background-color: #fefefe;
+  margin: auto;
+  padding: 5px 15px 15px 15px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 5px;
+}
+  
+
+.close 
+{
+  color: #aaaaaa;
+  display: flex;
+  justify-content:right;
+  font-size: 28px;
+  font-weight: bold;
+}
+  
+.close:hover, .close:focus 
+{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav ul
+{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-right: 25%;
+  margin-top: 30px;
+}
+
+nav ul li:hover
+{
+  border-bottom: 1px solid black;
+  font-weight: bold;
+}
+
+nav ul li
+{
+  padding: 0 20px 0 20px;
+}
+
+nav
+{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: -30px;
+}
+
+#search
+{
+  margin-top: 30px;
+  margin-right: 10px;
+  width: 250px;
+  border-radius: 10px;
+  padding: 0 0 0 10px;
+  height: 35px;
+}
+
+.test{
+  display: flex;
+  flex-direction: row;
+}
+
+#btn-add
+{
+ font-size: 14px;
+ font-weight: bold;
+ margin: 28px 0 30px 0;
+}
+
+.hr1
+{
+  border-top: 1px solid #bbb;
+  margin-bottom: 20px;
+}
+
+.half
+{
+  border-top: 1px solid #bbb;
+  width: 100%;
+}
+
+h4
+{
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+input
+{
+  margin-left: 20px;
+}
+
+select
+{
+  margin-left: 20px;
+}
+
+.button-form
+{
+  display: flex;
+  justify-content: right;
+}
+
+button
+{
+  margin-right: 20px;
+}
+
+body 
+{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, serif;
+}
+
+#content 
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 20px;
+  border: 2px solid #DEDEDE;
+}
+
+.media 
+{
+  width: 260px;
+  border: 1px solid #DEDEDE;
+  margin: 20px 10px;
+  display: grid;
+  height: 595px;
+}
+
+.image
+{
+
+  right: 0;
+  bottom: 0;
+  background-color: gainsboro;
+  font-size: 2rem;
+  width: 100%;
+  display: grid;
+}
+
+.info-top 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding: 0 5px;
+}
+
+.info-description
+{
+  text-align: justify;
+}
+
+.info{
+
+  display: grid;
+  grid-template-rows: 0.5fr 1.5fr 1.5fr 0.2fr;
+  padding: 10px 10px;
+}
+
+.info-buttons
+{
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr;
+  margin: -20px -10px -10px -10px;
+}
+
+.info-plot
+{
+  font-size: 0.9em;
+  padding: 5px 5px;
+}
+
+.info-rating
+{
+  border-top: 1px solid lightgray;
+  padding: 10px 0 10px 0;
+  margin-top: 50px;
+}
+
+.releaseDate
+{
+  font-size: 13px;
+  color: grey;
+}
+
+img
+{
+  width: 100%;
+  height: 250px;
+}
+
+.btn-edit
+{
+  border-radius: 0;
+  width: 100%;
+  height: 40px;
+  
+}
+
+.btn-remove
+{
+  border-radius: 0;
+  width: 100%;
+  height: 40px;
+}
+
+@media screen and (max-width: 700px)
+{
+  .test
+  {
+    margin-left: 30px;
+  }
+
+  nav
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+
+@media screen and (max-width: 550px)
+{
+  .test
+  {
+    display: flex;
+    flex-direction: column;
+    margin-left: 17%;
+  }
+  
+  nav
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul li{
+    text-align: center;
+  }
+
+  #btn-add
+  {
+    width: 100px;
+    margin-left: 80px;
+  }
+  
+}
+
+@media screen and (max-width: 430px)
+{
+  .test
+  {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  nav
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul li{
+    text-align: center;
+  }
+
+  #btn-add
+  {
+    width: 100px;
+    margin-left: 100px;
+  }
+  
+}
